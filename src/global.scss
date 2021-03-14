@@ -1,0 +1,86 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+.my-custom-class{
+    --background:linear-gradient(-45deg,#093655,red);
+    // #FF3F22 ;
+    --color:black;
+    // --border-style:solid;
+    // --border-width :5px;
+    // --border-color:skyblue;
+}
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('assets/fonts/Open-Sans/OpenSans-Regular.ttf');
+    
+  }
+
+  @font-face {
+    font-family: 'Source Code';
+    src: url('assets/fonts/SourceCodePro/SourceCodePro-Regular.ttf');
+    
+  }
+*{
+    font-family: 'Open Sans', 'Source Code', 'Helvetica Neue', 'Segoe UI', sans-serif;
+}
+
+.my-custom-modal-css .modal-wrapper {
+    top: 8%;
+    left: 0%;
+    width: 100%;
+    height: 90%;
+    position: absolute; 
+    display: block;  
+ }
+
+ .searchbar-input.sc-ion-searchbar-md {
+  border-radius: 25px;
+  background-position: left 8px center;
+  height: auto;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #7f8490;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.1) !important;
+}

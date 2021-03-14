@@ -1,0 +1,34 @@
+  <ion-list id="ionMenuList">
+    <div *ngFor ="let p of appPages.Oemadmin">
+    <ion-menu-toggle *ngIf="p.url">
+      <ion-item routerLinkActive="active" [routerDirection]="'root'" [routerLink]="[p.url]">
+        <ion-icon slot="start" [name]="p.icon"></ion-icon>
+        <ion-label>
+          {{p.title}}
+        </ion-label>
+      </ion-item>
+    </ion-menu-toggle>
+  
+    <!-- Item with Children -->
+    <ion-item routerLinkActive="active" button *ngIf="p.children?.length > 0" (click)="p.open = !p.open" [class.parent-active]="p.open" detail="false">
+        <ion-icon slot="start" [name]="p.icon"></ion-icon>  
+        <ion-icon slot="end" name="arrow-forward" *ngIf="p.open"></ion-icon>
+        <ion-icon slot="end" name="arrow-down" *ngIf="!p.open"></ion-icon>
+        <ion-label>{{ p.title }}</ion-label>
+    </ion-item>
+    
+    <!-- Children List for clicked Item -->
+    <ion-list *ngIf="!p.open">
+      <ion-menu-toggle>
+        <ion-item routerLinkActive="active" *ngFor="let sub of p.children" class="sub-item" [routerLink]="sub.url" routerDirection="root"
+          routerLinkActive="active">
+          <ion-icon [name]="sub.icon" slot="start"></ion-icon>
+          <ion-label>
+            {{ sub.title }}
+          </ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+    
+  </div>
+  </ion-list>

@@ -1,0 +1,12 @@
+[{
+    "shiftData" : "First",
+    "shiftId":1
+},
+{
+    "shiftData" : "Second",
+    "shiftId":2
+},
+{
+    "shiftData" : "Third",
+    "shiftId":3
+}]

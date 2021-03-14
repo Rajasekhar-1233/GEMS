@@ -1,0 +1,23 @@
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
+// The list of file replacements can be found in `angular.json`.
+export const environment = {
+  production: false,
+  
+  /* restUrl: 'http://localhost:8081/OEM/1.0.0/', */
+  restUrl: 'https://rapmoem.ubiqweise.io/OEM/1.0.0/',
+  gatewayConfigurationApi:'http://localhost:8085/ubiqthing/gatewayconfiguration/api/',
+  gatewayIdentitynApi:'http://localhost/:8086/ubiqthing/gatewayidentity/api/',
+  eh:"https://ubiqdata.ubiqweise.io/home/#/opendocument?data=eyJ1c2VyIjoiMTE0Njg5MCIsInNwYWNla2V5IjoiMTExMSIsImRvY0lkIjoiNjU4NjM3NiIsImFsZyI6IkhTMjU2IiwiemlwIjoiR1pJUCJ9.H4sIAAAAAAAAADWQy3KCMAAA_4VzdQw4hPQGETQgYnjrhUlAhFqiNopgp_9ee-je9raz38rHrVXeFQDmuoFmypsi7_zlh9Ft-LJsg9YlyZOATUskEZdLiYlOThWLUrOt6XQ1l8T8x1L94AGxb5kOhC7AXZn3Wh5ZNBAl8YtTRE7He0jPuNGGAl-7SBziPqkYoyhxYIxEl1K80WpwG3fguEp4NH7tipHjhGb2ZLfwFnHHVSjF9dynmh3ojVZkE2txv5yvPKvYM_JsIYI-zj1pB54XStEFxog328Hat-MQqqu_zGlqAmPvbHGR17wTQ_HoHRquPX_RZI6r4nR9XCLMq_5zoK8frZSvH9pMm8MZY6BmrEQq1GGFGDK4VkGGEDKUn18OkwEESgEAAA.CNigvMSimnwpW6XyG2EUzUNxAd_7NjA07gE9xAmOOF0",
+  ta:"https://ubiqdata.ubiqweise.io/home/#/opendocument?data=eyJ1c2VyIjoiMTE0Njg5MCIsInNwYWNla2V5IjoiMTExMSIsImRvY0lkIjoiNjU4NjM3NSIsImFsZyI6IkhTMjU2IiwiemlwIjoiR1pJUCJ9.H4sIAAAAAAAAADWQy1KDMAAA_4WzdKDQhHgLIDZQQKTYlgsTXk0AEQhKW8d_tx7c29529ltqZi49SqqqAwMp0oMkPvO7V1eX5c8FD7lLkhtRA04E6YehsAggbUnjN8zraLXVBcH_mGvfj6Dl44sDZW8TyaSdP7sDHhYeK6wYE4_HVmuP_aDhHgG4qBnLqLwsDJ6n8QDrl9i0_LBW5zFdBqtp_a91NkXp1XCtoN-nhOnhe5h4GmntqdpxhRSXGhx0gs1uzkEV9WO_dW5Bp9-qsSua4Jims8dRt2cy9qa6S0q2_IWuQDVezrl8cohtGx3bZK-id3eIPZ1k2TmazYciAE2yoQnP9yNciPsRTdF0qFCq1pQWaA0BLBFFRq6VkCKEDOnnF7MY4QFMAQAA.Z9N-1GAr4ThM67BRFY3b12OpjR3G3-u8hO4zeyKT-1c",    
+  eu:"https://ubiqdata.ubiqweise.io/home/#/opendocument?data=eyJ1c2VyIjoiMTE0Njg5MCIsInNwYWNla2V5IjoiMTExMSIsImRvY0lkIjoiNjU4NjM3NyIsImFsZyI6IkhTMjU2IiwiemlwIjoiR1pJUCJ9.H4sIAAAAAAAAADWQy3KCMAAA_4VzcUhiCekNGITEBo0P1BMTngYUULAqnf577aF729vOfmvVoLQPDYCpaRFDe9P6W_Ly_MmOiZ-qhWJ0O1IQKtrTputSl5q0zuQ6slUhJsG0p_Y_DuRcYJc7thcjBtwmhEkfd2U7298C_06NiDr8fBSzQK_O_vW8PsEuvuRybpPtCX9BPYtoidJ4h1glo32_ta8wbtsRHJSbLpn0xL2pmva08rw4B6q8X9ymMT-zmROsTTQg6q9W9ObASoyhNzDeFUzXWbl0QFGiYMEP6V_lpJEBAhsWS4l3TyPn9jsOvbD2ajLWlr0Y8kQMj-I6jzbitUP1_WsHMtAUG1KCQsqUQGzijEhiJSjDkhBiaT-_mcnxxkkBAAA.9azxzlYwjMOjsvqninBR9HutKRdz7DdHVbTi4JFthck",
+  wd:"https://ubiqdata.ubiqweise.io/home/#/opendocument?data=eyJ1c2VyIjoiMTE0Njg5MCIsInNwYWNla2V5IjoiMTExMSIsImRvY0lkIjoiNjU4NjM3OCIsImFsZyI6IkhTMjU2IiwiemlwIjoiR1pJUCJ9.H4sIAAAAAAAAADWQSXOCMABG_wvn6rANMb0FFwxbyiCKvThh0xCKkUWETv976aHv9l3efPO-pbJj0rukKLqxgrL0JrV9Mu98tG-JlTLCbBxNWPEZbnEtRLrGBuYZDY-IFcFyr7cY_WOqHhnA2jPRDgBbWTcfaiFwb23Yzpp6IoLZteEiskNw1srjZB6eV_deWwRh7mdiAaYaIV8tlG48j5-VAxunK0F9HFvT8uIXtW_V03Fjoov6nhZ-_hW_8ifvBsQz1z2p6RjEPBYkdM7cuDxSZuAmqLblYUiIu0DbbUX2fzeXH16_0C6j2RbO1VKYvwnsSO4rOXIanXjkcbkP-anLBi8c5h6sbecemqzpQKZUKShNoQoMkEEKV4mWAQohXEk_v4rgzb1KAQAA.0BZgDhGmawz2_bOkzNVoTcU_yPPU3vW9SIIUpkXgW1g",
+  hy:"https://ubiqdata.ubiqweise.io/home/#/opendocument?data=eyJ1c2VyIjoiMTE0Njg5MCIsInNwYWNla2V5IjoiMTExMSIsImRvY0lkIjoiNjU4NjM4MSIsImFsZyI6IkhTMjU2IiwiemlwIjoiR1pJUCJ9.H4sIAAAAAAAAADWQQXKCMAAA_8K5dYCkhPQGopgoKFBEe3ECAQlB0KIw0Onfaw_d29529lup7kJ5VzQNGiZWlRele6RPz0dapm4mtoKSeCKaL0hHmus1mxODSM6ivSWKYLaCHbH-sXVvO6C5Z1tLhKgm-gpwKQ8OneZO8UYXIbUzUQb15l7l_sFbuq8NbqGqhrD90hvUL27nKMCnBNBmSxahlj30XXebatUJUsfdWR5uUJ7c9OOOo2Rtnjd6CwbCfd-Jkgo39XiV1Xqf5LC9jHdwQZ7dSSGgPMLePwNjarO_yllkJHmcfuh2TJtQjnE_cbddPcqhTOvUAJ8nb10Au6os1j53iK577gAqgEhlTCsYy7CODMQxw2YKOGIYY1P5-QXIlQR4SQEAAA.jM29nrVmqvAYJlrOLBA_hluvKWVmx2YZJ-_UqgINhHs",
+  gId: [{ "gatewayConfigurationName": "Gateway1", "gatewayConfigurationId": 2020040201 },
+  { "gatewayConfigurationName": "Gateway2", "gatewayConfigurationId": 2020040202 },
+  { "gatewayConfigurationName": "Gateway3", "gatewayConfigurationId": 2020040203 },
+  { "gatewayConfigurationName": "Gateway4", "gatewayConfigurationId": 2020040204 },
+  { "gatewayConfigurationName": "Gateway5", "gatewayConfigurationId": 2020040205 }]
+
+};
+

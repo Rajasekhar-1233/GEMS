@@ -1,0 +1,107 @@
+.login-page {
+    --background:darkgray;
+    .card-center {
+        top       : 15em;
+        background: #093655;
+        background: #ffffff;
+        ;
+    }
+}
+
+.dorder25px {
+    border-radius: 25px;
+}
+
+h1 {
+    text-align: center;
+    color     : #fbab22;
+}
+
+.error-message {
+    color: #fb3022;
+}
+
+.form-align {
+    position: relative;
+    top     : 3em;
+    padding : 2em;
+}
+
+.header-border {
+    border-right: 1px rgb(59, 58, 58) solid;
+    margin-top  : 0.5em;
+}
+
+.top-navbar {
+
+    // --background: linear-gradient(-45deg, #0c54a0, #6db7d2c4, #0c54a0);
+    --background-size: 100% 100%;
+    animation        : gradientBG 15s ease infinite;
+}
+
+ion-button {
+    color: #fff;
+
+}
+
+
+ion-card {
+    // --background: linear-gradient(-45deg, #0c54a0, #6db7d2c4, #0c54a0);
+    height       : 400px;
+    width        : 400px;
+    margin       : auto;
+    border-radius: 15px;
+}
+
+img {
+    height: 20px;
+    width : 20px;
+
+}
+
+.sumit-btn {
+    background: #001e47;
+}
+
+.login-header {
+    background: var(--theme-color);
+}
+
+.login-header {
+    position     : relative;
+    background   : var(--theme-color);
+    border-radius: 0em;
+}
+
+.ion-header:after {
+    content : '';
+    position: absolute;
+
+    left            : 15%;
+    width           : 0;
+    height          : 0;
+    border          : 20 px solid transparent;
+    border-top-color: var(--theme-color);
+    border-bottom   : 0;
+    margin-left     : -15px;
+    margin-bottom   : 15px;
+
+}
+
+.logo.img {
+    display: block;
+}
+
+heading-column-lr {
+    display       : flex;
+    -ms-flex-align: center;
+    align-items   : center;
+
+}
+
+big-heading {
+    font-family: "Heebo-Bold" !important;
+    font-size  : 30px !important;
+    color      : var(--theme-color);
+
+}

@@ -1,0 +1,11 @@
+[{
+    "assetType" : "BOILER"
+},
+{
+    "assetType" : "CHILLER"
+},
+{
+    "assetType" : "HVAC"
+},{
+    "assetType" : "PUMP"
+}]

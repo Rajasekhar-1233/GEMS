@@ -1,0 +1,82 @@
+.user-container {
+  // --background: url(/assets/images/employees-mid.jpg) ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+
+  .header-bg {
+    --background: #b89454 !important;
+
+    .header-text {
+      color: aliceblue;
+      padding-top: 0.625em;
+    }
+  }
+
+  .user-grid {
+    .first-row {
+      padding: 1.5em 0px;
+    }
+
+    .user-grid-height {
+      overflow: auto;
+      max-height: 30em;
+      background: #e6e6fa;
+
+      .title {
+        background: #123e6d;
+        color: #fff;
+        border: none;
+        font-weight: bold;
+        font-size: 1em;
+        padding: 1em;
+        text-align: center;
+      }
+
+      .sub-item {
+        border-top: 1px solid #ccc;
+        text-align: center;
+        color: #000;
+      }
+
+      .icon {
+        font-size: 1.5em;
+        cursor: pointer;
+      }
+    }
+
+    .error-message {
+      color: red;
+      font-size: 0.875em;
+      margin-left: 0.625em;
+      margin-top: 0.625em;
+    }
+
+    ion-button {
+      height: 3.6em;
+      margin-top: 0.02em;
+    }
+  }
+
+  button:disabled,
+  button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+
+.addModalNoteTextImportant {
+  font-size: 15px;
+  color: red;
+}
+
+.addModalNoteText {
+  font-size: 10px;
+}
+
+img {
+  height: 20px;
+  width: 20px;
+}

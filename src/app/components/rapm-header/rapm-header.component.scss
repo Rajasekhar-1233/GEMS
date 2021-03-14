@@ -1,0 +1,45 @@
+
+    .header-border{
+        border-right: 1px r#d76d2d solid;
+        margin-top: 0.5em;
+    }
+   .top-navbar{
+   
+    --background: linear-gradient(-90deg,#d76d2d, #d76d2d,#d76d2d);
+    // (-45deg, #0c54a0, #6db7d2c4, #0c54a0)
+
+    --background-size: 100% 100%;
+    animation: gradientBG 15s ease infinite;
+    ion-button{
+      color:#fff;
+      ion-badge {
+        position: absolute;
+        top: -0.2rem;
+        //right: -0.2rem;
+        left:1.8rem;
+        opacity: 0.9;
+        --background: red;
+        
+      }
+    }
+    ion-title,ion-buttons,ion-select{
+      color: #fff;
+    }    
+   }
+   @keyframes gradientBG {
+    0% {
+      --background-position: 0% 50%;
+    }
+    50% {
+      --background-position: 100% 50%;
+    }
+    100% {
+      --background-position: 0% 50%;
+    }
+  }
+  .navbar-logout{
+    color: #fff;  
+  }
+  .navbar-alert:hover ,.navbar-logout:hover{
+    color:#d76d2d !important;
+  }

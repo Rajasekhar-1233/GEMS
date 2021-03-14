@@ -1,0 +1,59 @@
+<ion-content class="login-page">
+  <ion-card class="card-center">
+
+    <div class="form-align">
+      <div heading-column-lr>
+        <h5 style="text-align: center">GEMS Cloud Web Application</h5>
+      </div>
+
+      <form [formGroup]="loginForm" novalidate>
+
+        <ion-row>
+          <ion-col class="form-group">
+            <ion-item tranparent class="dorder25px">
+              <img icon-small src="../../../assets/icon/user.png" />
+
+              <ion-input maxlength="30" type="text" formControlName="email" placeholder="Email"></ion-input>
+            </ion-item>
+            <div class="validation-errors">
+              <ng-container *ngFor="let validation of validation_messages.email">
+                <div class="error-message"
+                  *ngIf="loginForm.get('email').hasError(validation.type) && (loginForm.get('email').dirty || loginForm.get('email').touched)">
+                  <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
+                </div>
+              </ng-container>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="form-group">
+            <ion-item tranparent class="dorder25px">
+
+              <img icon-small src="../../../assets/icon/password.ico" />
+
+              <ion-input (keyup.enter)=onSubmit() maxlength="14" type="password" formControlName="password"
+                placeholder="Password"></ion-input>
+            </ion-item>
+            <div class="validation-errors">
+              <ng-container *ngFor="let validation of validation_messages.password">
+                <div class="error-message"
+                  *ngIf="loginForm.get('password').hasError(validation.type) && (loginForm.get('password').dirty || loginForm.get('password').touched)">
+                  <ion-icon name="information-circle-outline"></ion-icon> {{ validation.message }}
+                </div>
+              </ng-container>
+            </div>
+          </ion-col>
+        </ion-row>
+
+        <div linespace></div>
+        <div class="error-message" *ngIf="validation_messages.authError.message !=='' ">
+          <ion-icon name="ios-warning"></ion-icon> {{validation_messages.authError.message}}
+        </div>
+        <ion-button [disabled]="!loginForm.valid" (click)="onSubmit()" class="submit-btn" shape="round" fill="solid"
+          size="medium" expand="full" type="submit">Login</ion-button>
+
+      </form>
+    </div>
+  </ion-card>
+</ion-content>

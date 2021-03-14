@@ -1,0 +1,22 @@
+// ion-item{
+//     // --background: linear-gradient(-45deg, #0c54a0, #6db7d2c4, #0c54a0);
+// }
+#ionMenuList{
+    padding-top:0px;
+}
+ion-list{
+    padding-top:0;
+    padding-bottom:0;
+}
+.active {
+    // --ion-text-color: var(--ion-color-primary-contrast );
+    --ion-text-color: #123e6d;
+    // #123e6d;
+    // border-right: 5px solid #ffc700;
+    --background: #ffc700 ;
+ 
+    ion-icon {
+        --ion-text-color-rgb: var(--ion-color-primary-contrast );  
+              
+    }
+}

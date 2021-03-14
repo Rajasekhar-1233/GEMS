@@ -1,0 +1,41 @@
+<ion-header fullscreen>
+  <ion-toolbar>
+    <!-- <ion-title>{{param}}</ion-title> -->
+    <ion-buttons slot="start">
+      <ion-button color="primary" fill="outline" (click)="showParam('eh')">
+        Equipment Health
+      </ion-button>
+      <ion-button color="secondary" fill="outline" (click)="showParam('eu')">
+        Energy Utilization
+      </ion-button>
+      <ion-button color="tertiary" fill="outline" (click)="showParam('wd')">
+        Productivity
+      </ion-button>
+      <ion-button color="medium" fill="outline" (click)="showParam('ta')">
+        Trend Analysis
+      </ion-button>
+      <ion-button color="warning" fill="outline" (click)="showParam('hy')">
+        History
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="refresh()">
+        <ion-icon name="refresh-circle"></ion-icon>
+      </ion-button>
+      <ion-button (click)="dismissModal()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<iframe id="eu">
+</iframe>
+<iframe id="eh">
+</iframe>
+<iframe id="wd">
+</iframe>
+<iframe id="ta">
+</iframe>
+<iframe id="hy">
+</iframe>
